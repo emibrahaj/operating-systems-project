@@ -1,0 +1,45 @@
+Hello, this is a very long email line that should be folded because 
+it is much longer than seventy characters and contains extra 
+formatting that needs to be cleaned.
+This line has indentation after a quote marker.
+This line has tabs at the beginning.
+Normal line without quote marker.
+% time     seconds  usecs/call     calls    errors syscall
+------ ----------- ----------- --------- --------- ----------------
+ 87.56    0.003104        1034         3         1 wait4
+  2.65    0.000094          47         2           clone
+  2.09    0.000074           3        20        13 openat
+  1.55    0.000055           3        14           mmap
+  0.73    0.000026           1        19           rt_sigprocmask
+  0.68    0.000024           1        16           rt_sigaction
+  0.65    0.000023           5         4           mprotect
+  0.59    0.000021           1        11         2 close
+  0.56    0.000020           2         9           newfstatat
+  0.28    0.000010           2         5           read
+  0.28    0.000010           1         6           fstat
+  0.25    0.000009           9         1           munmap
+  0.23    0.000008           2         4         4 ioctl
+  0.20    0.000007           1         4           lseek
+  0.20    0.000007           1         4         1 fcntl
+  0.17    0.000006           2         3           brk
+  0.14    0.000005           5         1           pipe2
+  0.14    0.000005           1         3           prlimit64
+  0.11    0.000004           4         1           dup2
+  0.11    0.000004           1         3           getpid
+  0.11    0.000004           1         3           getppid
+  0.08    0.000003           1         2           pread64
+  0.08    0.000003           3         1         1 access
+  0.06    0.000002           2         1           rt_sigreturn
+  0.06    0.000002           2         1           uname
+  0.06    0.000002           2         1           getpgrp
+  0.06    0.000002           2         1           getresuid
+  0.06    0.000002           2         1           getresgid
+  0.06    0.000002           2         1           futex
+  0.06    0.000002           2         1           getrandom
+  0.06    0.000002           2         1           rseq
+  0.03    0.000001           1         1           arch_prctl
+  0.03    0.000001           1         1           set_tid_address
+  0.03    0.000001           1         1           set_robust_list
+  0.00    0.000000           0         1           execve
+------ ----------- ----------- --------- --------- ----------------
+100.00    0.003545          23       151        22 total

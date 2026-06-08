@@ -1,0 +1,20 @@
+Hello, this is a very long email line that should be folded because 
+it is much longer than seventy characters and contains extra 
+formatting that needs to be cleaned.
+This line has indentation after a quote marker.
+		This line has tabs at the beginning.
+Normal line without quote marker.
+
+ Performance counter stats for './scripts_original/mailformat.sh datasets/emails/sample_email.txt':
+
+              3.21 msec task-clock                                                            
+                 3      context-switches                                                      
+                 1      cpu-migrations                                                        
+               834      page-faults                                                           
+
+       0.002932476 seconds time elapsed
+
+       0.000881000 seconds user
+       0.003015000 seconds sys
+
+
