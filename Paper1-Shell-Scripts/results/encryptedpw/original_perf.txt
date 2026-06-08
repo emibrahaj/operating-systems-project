@@ -1,0 +1,21 @@
+./scripts_original/encryptedpw.sh: line 25: /home/bozo/secret/password_encrypted.file: No such file or directory
+ftp: Can't lookup `XXX:ftp': Temporary failure in name resolution
+Not connected.
+Not connected.
+Bell mode on.
+Not connected.
+Not connected.
+
+ Performance counter stats for './scripts_original/encryptedpw.sh datasets/encryptedpw/test_upload.txt':
+
+              4.83 msec task-clock                                                            
+                 7      context-switches                                                      
+                 0      cpu-migrations                                                        
+             1,230      page-faults                                                           
+
+       0.005937294 seconds time elapsed
+
+       0.001427000 seconds user
+       0.004460000 seconds sys
+
+
