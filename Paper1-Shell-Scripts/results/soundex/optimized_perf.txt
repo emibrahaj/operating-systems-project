@@ -1,0 +1,18 @@
+
+Name = Harrison
+Soundex = H625
+
+
+ Performance counter stats for './scripts_optimized/soundex_optimized.sh Harrison':
+
+              3.66 msec task-clock                                                            
+                19      context-switches                                                      
+                 0      cpu-migrations                                                        
+               977      page-faults                                                           
+
+       0.007255066 seconds time elapsed
+
+       0.001344000 seconds user
+       0.003759000 seconds sys
+
+
