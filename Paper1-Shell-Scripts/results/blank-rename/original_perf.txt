@@ -1,0 +1,15 @@
+0 files renamed.
+
+ Performance counter stats for '../../scripts_original/blank-rename.sh':
+
+              4.42 msec task-clock                                                            
+                 8      context-switches                                                      
+                 0      cpu-migrations                                                        
+             1,096      page-faults                                                           
+
+       0.004594080 seconds time elapsed
+
+       0.003708000 seconds user
+       0.001808000 seconds sys
+
+
