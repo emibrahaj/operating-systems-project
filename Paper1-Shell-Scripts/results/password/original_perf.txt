@@ -1,0 +1,15 @@
+jKrANICy
+
+ Performance counter stats for './scripts_original/password.sh':
+
+              0.79 msec task-clock                                                            
+                 1      context-switches                                                      
+                 0      cpu-migrations                                                        
+               141      page-faults                                                           
+
+       0.003824627 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001378000 seconds sys
+
+

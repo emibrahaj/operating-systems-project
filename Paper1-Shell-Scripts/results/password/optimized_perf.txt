@@ -1,0 +1,15 @@
+MyMy8CiA
+
+ Performance counter stats for './scripts_optimized/password_optimized.sh 8':
+
+              5.12 msec task-clock                                                            
+                 3      context-switches                                                      
+                 0      cpu-migrations                                                        
+             1,186      page-faults                                                           
+
+       0.003927956 seconds time elapsed
+
+       0.003189000 seconds user
+       0.002628000 seconds sys
+
+
