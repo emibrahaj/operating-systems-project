@@ -1,0 +1,174 @@
+[H[2J[3J
+[7m=======================
+(B[m 10 generations
+ of
+"Life in the Slow Lane"
+[7m=======================
+(B[m
+   .  ..   
+   .. .    
+     .   ..
+  .       .
+     .     
+ ..  ...   
+     .     
+    ...    
+   .. ..   
+  ..   ..  
+
+Generation 0 - 29 alive
+
+
+   .....   
+   .. ..   
+   ...   ..
+         ..
+ ..  .     
+    ..     
+       .   
+   .   .   
+  .     .  
+  ... ...  
+
+Generation 1 - 32 alive
+
+   .   .   
+  .    ..  
+   . .. ...
+  .. .   ..
+    ..     
+    ...    
+    . .    
+       ..  
+  . . . .  
+  ..   ..  
+
+Generation 2 - 33 alive
+
+       ..  
+  ...      
+   . ..   .
+  ..    . .
+           
+   .  .    
+    . .    
+   .  . .  
+  .   .  . 
+  ..   ..  
+
+Generation 3 - 27 alive
+
+   .       
+  ......   
+     .   . 
+  ...    . 
+  ..       
+     .     
+   .. .    
+   .  .    
+  .   .  . 
+  ..   ..  
+
+Generation 4 - 28 alive
+
+  .. ..    
+  .. ..    
+        .  
+  . .      
+  .        
+  .  .     
+   .. .    
+  ... ..   
+  .   . .  
+  ..   ..  
+
+Generation 5 - 29 alive
+
+  .. ..    
+  .. ...   
+  . ..     
+   .       
+ ..        
+  . ..     
+      ..   
+  . . .    
+ .  ... .  
+  ..   ..  
+
+Generation 6 - 32 alive
+
+  .. . .   
+ .     .   
+  .  .     
+ . ..      
+ .. .      
+ ... ..    
+    . ..   
+   ..      
+ .  . . .  
+  .......  
+
+Generation 7 - 35 alive
+
+  .   .    
+ . ..      
+ ....      
+ .  ..     
+           
+ .    ..   
+      ..   
+   .. .    
+      . .  
+  ... . .  
+
+Generation 8 - 27 alive
+
+  ..       
+ .  ..     
+ .         
+ .  ..     
+     ..    
+      ..   
+           
+      .    
+  .   .    
+   . .     
+
+Generation 9 - 18 alive
+
+  ...      
+ . ..      
+ ..        
+    ...    
+    .  .   
+     ...   
+      ..   
+           
+     ..    
+           
+
+Generation 10 - 20 alive
+
+	Command being timed: "./scripts_original/life.sh datasets/life/gen0"
+	User time (seconds): 1.26
+	System time (seconds): 0.97
+	Percent of CPU this job got: 8%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:26.60
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 8008
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 513822
+	Voluntary context switches: 7318
+	Involuntary context switches: 1094
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
