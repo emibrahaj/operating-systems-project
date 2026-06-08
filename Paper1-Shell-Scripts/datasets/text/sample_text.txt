@@ -1,0 +1,5 @@
+Linux shell scripting is useful for automation.
+Shell scripts can process text files, logs, and system output.
+This text file contains repeated repeated repeated words.
+Automation with Linux shell scripts helps system administrators.
+# This line starts with a hash and should be removed.
