@@ -1,0 +1,12 @@
+flowchart TD
+    A[Start] --> B[Set counter to 0]
+    B --> C[Loop through files in directory]
+    C --> D{Filename contains a space?}
+    D -- No --> H{More files?}
+    D -- Yes --> E[Replace spaces with underscores]
+    E --> F[Rename file with mv]
+    F --> G[Increment counter]
+    G --> H
+    H -- Yes --> C
+    H -- No --> I[Print files renamed]
+    I --> J[Exit]

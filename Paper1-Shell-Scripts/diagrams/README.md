@@ -1,6 +1,19 @@
 # Diagrams
 
-These diagrams describe the experiment workflow and the new file organizer script.
+This folder contains Mermaid flowcharts for Paper 1.
+
+## Script Diagrams
+
+- `blank-rename.mmd`
+- `collatz.mmd`
+- `days-between.mmd`
+- `encryptedpw.mmd`
+- `life.mmd`
+- `mailformat.mmd`
+- `makedict.mmd`
+- `password.mmd`
+- `rn.mmd`
+- `soundex.mmd`
 
 ## Benchmark Workflow
 

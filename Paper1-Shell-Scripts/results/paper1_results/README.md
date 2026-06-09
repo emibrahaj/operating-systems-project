@@ -2,11 +2,11 @@
 
 This folder keeps the final result summary files.
 
-- `paper1_results_table.md`: timing and memory summary
 - `summary.md`: short interpretation of the main results
 
 The raw files are still kept in the main `results/` folders:
 
+- `results/paper1_results_table.md`
 - `results/<script-name>/`
 - `results/time/`
 - `results/strace/`

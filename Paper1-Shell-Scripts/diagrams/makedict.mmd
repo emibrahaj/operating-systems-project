@@ -1,0 +1,13 @@
+flowchart TD
+    A[Start] --> B{Readable input file?}
+    B -- No --> C[Print usage and exit]
+    B -- Yes --> D[Concatenate input files]
+    D --> E[Convert uppercase to lowercase]
+    E --> F[Split spaces into new lines]
+    F --> G[Remove non-letter characters]
+    G --> H[Sort words]
+    H --> I[Remove duplicates]
+    I --> J[Remove comment lines]
+    J --> K[Remove blank lines]
+    K --> L[Print dictionary list]
+    L --> M[Exit]

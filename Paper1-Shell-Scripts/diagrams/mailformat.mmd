@@ -1,0 +1,11 @@
+flowchart TD
+    A[Start] --> B{One filename argument?}
+    B -- No --> C[Print usage and exit]
+    B -- Yes --> D{File exists?}
+    D -- No --> E[Print file-not-found error and exit]
+    D -- Yes --> F[Set maximum line width to 70]
+    F --> G[Build sed cleanup script]
+    G --> H[Remove leading carets, tabs, and spaces]
+    H --> I[Fold long lines at word boundaries]
+    I --> J[Print formatted text]
+    J --> K[Exit with pipeline status]

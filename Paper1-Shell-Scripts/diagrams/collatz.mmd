@@ -1,0 +1,15 @@
+flowchart TD
+    A[Start] --> B[Read seed or use process ID]
+    B --> C[Print heading]
+    C --> D[Set iteration to 1]
+    D --> E{Iteration <= 200?}
+    E -- No --> K[Print final newline]
+    K --> L[Exit]
+    E -- Yes --> F[Print current value]
+    F --> G{Current value even?}
+    G -- Yes --> H[Divide value by 2]
+    G -- No --> I[Set value to value * 3 + 1]
+    H --> J[Print line break every 10 values]
+    I --> J
+    J --> M[Increment iteration]
+    M --> E

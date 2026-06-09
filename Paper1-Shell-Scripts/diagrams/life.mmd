@@ -1,0 +1,23 @@
+flowchart TD
+    A[Start] --> B[Read start file argument or use gen0]
+    B --> C{Start file exists?}
+    C -- No --> D[Print missing-file error and exit]
+    C -- Yes --> E[Load grid into array]
+    E --> F[Clear screen and print title]
+    F --> G[Display generation 0]
+    G --> H[Set generation to 1]
+    H --> I{Generation <= 10?}
+    I -- No --> Q[Exit]
+    I -- Yes --> J[Loop through each cell]
+    J --> K[Count valid live neighbors]
+    K --> L{Birth or survival rule met?}
+    L -- Yes --> M[Mark cell alive]
+    L -- No --> N[Mark cell dead]
+    M --> O{More cells?}
+    N --> O
+    O -- Yes --> J
+    O -- No --> P[Display new generation and live count]
+    P --> R{Any cells alive?}
+    R -- No --> S[Print no-cells-alive message and exit]
+    R -- Yes --> T[Increment generation and sleep]
+    T --> I

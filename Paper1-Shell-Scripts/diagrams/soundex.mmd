@@ -1,0 +1,17 @@
+flowchart TD
+    A[Start] --> B{One name argument?}
+    B -- No --> C[Print usage and exit]
+    B -- Yes --> D[Print input name]
+    D --> E[Convert name to lowercase]
+    E --> F[Save first letter as uppercase prefix]
+    F --> G[Remove first letter from remaining name]
+    G --> H[Map letters to Soundex digits]
+    H --> I[Remove vowels and repeated digits]
+    I --> J{First encoded group duplicates prefix group?}
+    J -- Yes --> K[Drop duplicate leading digit]
+    J -- No --> L[Keep suffix digits]
+    K --> M[Append zero padding]
+    L --> M
+    M --> N[Take first four characters]
+    N --> O[Print Soundex code]
+    O --> P[Exit]

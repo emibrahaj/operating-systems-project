@@ -1,0 +1,15 @@
+flowchart TD
+    A[Start] --> B{Two pattern arguments?}
+    B -- No --> C[Print usage and exit]
+    B -- Yes --> D[Set rename counter to 0]
+    D --> E[Loop through files matching old pattern]
+    E --> F{Regular file?}
+    F -- No --> K{More matches?}
+    F -- Yes --> G[Strip path with basename]
+    G --> H[Replace old pattern with new pattern]
+    H --> I[Rename file with mv]
+    I --> J[Increment counter]
+    J --> K
+    K -- Yes --> E
+    K -- No --> L[Print files renamed]
+    L --> M[Exit]

@@ -1,0 +1,17 @@
+flowchart TD
+    A[Start] --> B{Two date arguments?}
+    B -- No --> C[Print usage and exit]
+    B -- Yes --> D[Parse first date]
+    D --> E{First date valid?}
+    E -- No --> C
+    E -- Yes --> F[Strip leading zeros]
+    F --> G[Convert first date to day index]
+    G --> H[Parse second date]
+    H --> I{Second date valid?}
+    I -- No --> C
+    I -- Yes --> J[Strip leading zeros]
+    J --> K[Convert second date to day index]
+    K --> L[Subtract indexes]
+    L --> M[Take absolute value]
+    M --> N[Print day difference]
+    N --> O[Exit]

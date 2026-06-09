@@ -4,6 +4,10 @@ This file lists the supporting material used for the Shell Script Analysis and O
 
 ## Appendix A: Source Files
 
+Report document:
+
+- `report/Paper1.docx`
+
 Original scripts:
 
 - `scripts_original/blank-rename.sh`

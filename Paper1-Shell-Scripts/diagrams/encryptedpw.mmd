@@ -1,0 +1,14 @@
+flowchart TD
+    A[Start] --> B{Filename argument present?}
+    B -- No --> C[Print usage and exit]
+    B -- Yes --> D[Strip path from filename]
+    D --> E[Set username, server, and directory]
+    E --> F[Read encrypted password file]
+    F --> G[Decrypt password with cruft]
+    G --> H[Open ftp session without auto-login]
+    H --> I[Send username and password]
+    I --> J[Switch to binary mode]
+    J --> K[Change remote directory]
+    K --> L[Upload file]
+    L --> M[Close ftp session]
+    M --> N[Exit]
