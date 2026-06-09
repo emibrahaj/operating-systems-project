@@ -1,0 +1,17 @@
+ssh: connect to host example.com port 22: Connection refused
+Connection closed
+Connection closed.  
+
+ Performance counter stats for './scripts_optimized/encryptedpw_optimized.sh datasets/encryptedpw/test_upload.txt':
+
+              7.17 msec task-clock                                                            
+                15      context-switches                                                      
+                 1      cpu-migrations                                                        
+             1,369      page-faults                                                           
+
+      42.019561118 seconds time elapsed
+
+       0.001893000 seconds user
+       0.006278000 seconds sys
+
+

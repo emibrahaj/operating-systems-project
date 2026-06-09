@@ -1,0 +1,165 @@
+[H[2J[3J
+[7m=======================
+(B[m 10 generations
+ of
+"Life in the Slow Lane"
+[7m=======================
+(B[m
+   .  ..   
+   .. .    
+     .   ..
+  .       .
+     .     
+ ..  ...   
+     .     
+    ...    
+   .. ..   
+  ..   ..  
+
+Generation 0 - 29 alive
+
+
+   .....   
+   .. ..   
+   ...   ..
+         ..
+ ..  .     
+    ..     
+       .   
+   .   .   
+  .     .  
+  ... ...  
+
+Generation 1 - 32 alive
+
+   .   .   
+  .    ..  
+   . .. ...
+  .. .   ..
+    ..     
+    ...    
+    . .    
+       ..  
+  . . . .  
+  ..   ..  
+
+Generation 2 - 33 alive
+
+       ..  
+  ...      
+   . ..   .
+  ..    . .
+           
+   .  .    
+    . .    
+   .  . .  
+  .   .  . 
+  ..   ..  
+
+Generation 3 - 27 alive
+
+   .       
+  ......   
+     .   . 
+  ...    . 
+  ..       
+     .     
+   .. .    
+   .  .    
+  .   .  . 
+  ..   ..  
+
+Generation 4 - 28 alive
+
+  .. ..    
+  .. ..    
+        .  
+  . .      
+  .        
+  .  .     
+   .. .    
+  ... ..   
+  .   . .  
+  ..   ..  
+
+Generation 5 - 29 alive
+
+  .. ..    
+  .. ...   
+  . ..     
+   .       
+ ..        
+  . ..     
+      ..   
+  . . .    
+ .  ... .  
+  ..   ..  
+
+Generation 6 - 32 alive
+
+  .. . .   
+ .     .   
+  .  .     
+ . ..      
+ .. .      
+ ... ..    
+    . ..   
+   ..      
+ .  . . .  
+  .......  
+
+Generation 7 - 35 alive
+
+  .   .    
+ . ..      
+ ....      
+ .  ..     
+           
+ .    ..   
+      ..   
+   .. .    
+      . .  
+  ... . .  
+
+Generation 8 - 27 alive
+
+  ..       
+ .  ..     
+ .         
+ .  ..     
+     ..    
+      ..   
+           
+      .    
+  .   .    
+   . .     
+
+Generation 9 - 18 alive
+
+  ...      
+ . ..      
+ ..        
+    ...    
+    .  .   
+     ...   
+      ..   
+           
+     ..    
+           
+
+Generation 10 - 20 alive
+
+
+ Performance counter stats for './scripts_original/life.sh datasets/life/gen0':
+
+          2,105.52 msec task-clock                                                            
+             4,823      context-switches                                                      
+               143      cpu-migrations                                                        
+           513,635      page-faults                                                           
+
+      26.479148623 seconds time elapsed
+
+       1.371072000 seconds user
+       1.050104000 seconds sys
+
+

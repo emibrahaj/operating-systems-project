@@ -1,0 +1,161 @@
+Game of Life Optimized
+Grid: 10x10
+Generations: 10
+
+Generation 0
+  .  ..   
+  .. .    
+    .   ..
+ .       .
+    .     
+..  ...   
+    .     
+   ...    
+  .. ..   
+ ..   ..  
+Alive cells: 29
+
+Generation 1
+  .....   
+  .. ..   
+  ...   ..
+        ..
+..  .     
+   ..     
+      .   
+  .   .   
+ .     .  
+ ... ...  
+Alive cells: 32
+
+Generation 2
+  .   .   
+ .    ..  
+  . .. ...
+ .. .   ..
+   ..     
+   ...    
+   . .    
+      ..  
+ . . . .  
+ ..   ..  
+Alive cells: 33
+
+Generation 3
+      ..  
+ ...      
+  . ..   .
+ ..    . .
+          
+  .  .    
+   . .    
+  .  . .  
+ .   .  . 
+ ..   ..  
+Alive cells: 27
+
+Generation 4
+  .       
+ ......   
+    .   . 
+ ...    . 
+ ..       
+    .     
+  .. .    
+  .  .    
+ .   .  . 
+ ..   ..  
+Alive cells: 28
+
+Generation 5
+ .. ..    
+ .. ..    
+       .  
+ . .      
+ .        
+ .  .     
+  .. .    
+ ... ..   
+ .   . .  
+ ..   ..  
+Alive cells: 29
+
+Generation 6
+ .. ..    
+ .. ...   
+ . ..     
+  .       
+..        
+ . ..     
+     ..   
+ . . .    
+.  ... .  
+ ..   ..  
+Alive cells: 32
+
+Generation 7
+ .. . .   
+.     .   
+ .  .     
+. ..      
+.. .      
+... ..    
+   . ..   
+  ..      
+.  . . .  
+ .......  
+Alive cells: 35
+
+Generation 8
+ .   .    
+. ..      
+....      
+.  ..     
+          
+.    ..   
+     ..   
+  .. .    
+     . .  
+ ... . .  
+Alive cells: 27
+
+Generation 9
+ ..       
+.  ..     
+.         
+.  ..     
+    ..    
+     ..   
+          
+     .    
+ .   .    
+  . .     
+Alive cells: 18
+
+Generation 10
+ ...      
+. ..      
+..        
+   ...    
+   .  .   
+    ...   
+     ..   
+          
+    ..    
+          
+Alive cells: 20
+
+
+ Performance counter stats for './scripts_optimized/life_optimized.sh datasets/life/gen0':
+
+          3,181.68 msec task-clock                                                            
+            19,909      context-switches                                                      
+                11      cpu-migrations                                                        
+         1,137,304      page-faults                                                           
+
+       3.725932995 seconds time elapsed
+
+       2.390606000 seconds user
+       1.599800000 seconds sys
+
+

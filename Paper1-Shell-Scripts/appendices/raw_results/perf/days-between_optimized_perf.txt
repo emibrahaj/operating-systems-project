@@ -1,0 +1,15 @@
+1827
+
+ Performance counter stats for './scripts_optimized/days-between_optimized.sh 01/01/2020 01/01/2025':
+
+              6.62 msec task-clock                                                            
+                13      context-switches                                                      
+                 0      cpu-migrations                                                        
+             1,648      page-faults                                                           
+
+       0.008764527 seconds time elapsed
+
+       0.002993000 seconds user
+       0.004607000 seconds sys
+
+

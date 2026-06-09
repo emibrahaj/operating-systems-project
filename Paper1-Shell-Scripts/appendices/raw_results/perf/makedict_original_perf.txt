@@ -1,0 +1,45 @@
+a
+administrators
+and
+automation
+be
+can
+contains
+file
+files
+for
+hash
+helps
+is
+line
+linux
+logs
+output
+process
+removed
+repeated
+scripting
+scripts
+shell
+should
+starts
+system
+text
+this
+useful
+with
+words
+
+ Performance counter stats for './scripts_original/makedict.sh datasets/text/sample_text.txt':
+
+             13.31 msec task-clock                                                            
+                28      context-switches                                                      
+                 0      cpu-migrations                                                        
+             3,538      page-faults                                                           
+
+       0.005960252 seconds time elapsed
+
+       0.006576000 seconds user
+       0.008283000 seconds sys
+
+

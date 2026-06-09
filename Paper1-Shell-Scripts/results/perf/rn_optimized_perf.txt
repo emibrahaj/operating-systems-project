@@ -1,0 +1,15 @@
+3 files renamed.
+
+ Performance counter stats for '../../scripts_optimized/rn_optimized.sh txt bak':
+
+              3.11 msec task-clock                                                            
+                 3      context-switches                                                      
+                 0      cpu-migrations                                                        
+               613      page-faults                                                           
+
+       0.003666271 seconds time elapsed
+
+       0.002964000 seconds user
+       0.000823000 seconds sys
+
+

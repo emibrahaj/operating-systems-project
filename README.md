@@ -1,29 +1,32 @@
 # Operating Systems Project
 
-This repository contains the practical work for the Operating Systems final project. It is organized as three separate paper folders so that each topic can keep its own source code, datasets, benchmark outputs, and report material.
+This repository contains the practical files for the Operating Systems final project. The work is split into three paper folders. Paper 1 is complete enough to include scripts, datasets, measurements, screenshots, and appendix material. Paper 2 and Paper 3 are still placeholders.
 
-Paper 1 is the active, implemented part of the repository. Paper 2 and Paper 3 are present as placeholders for future work.
-
-## Repository Layout
+## Structure
 
 ```text
 operating-systems-project/
 |-- Paper1-Shell-Scripts/
+|   |-- appendices/
+|   |-- benchmarks/
+|   |-- datasets/
+|   |-- diagrams/
+|   |-- report/
+|   |-- results/
 |   |-- scripts_original/
 |   |-- scripts_optimized/
-|   |-- datasets/
-|   |-- results/
+|   |-- src/
 |   `-- benchmark.sh
 |-- Paper2-Synchronization/
 |-- Paper3-Scheduling-Queueing/
 `-- README.md
 ```
 
-## Paper 1: Shell Script Analysis and Optimization
+## Paper 1
 
-`Paper1-Shell-Scripts/` compares ten original Bash scripts with optimized versions. The work focuses on how small shell-programming choices affect execution time, process creation, system calls, and command overhead.
+Paper 1 studies ten Bash scripts. For each one, the original version is kept in `scripts_original/` and the optimized version is kept in `scripts_optimized/`.
 
-The selected scripts are:
+Scripts used:
 
 - `blank-rename.sh`
 - `collatz.sh`
@@ -36,62 +39,41 @@ The selected scripts are:
 - `rn.sh`
 - `soundex.sh`
 
-Each original script is stored in `scripts_original/`, and the matching optimized implementation is stored in `scripts_optimized/`. Test inputs are stored in `datasets/`, while measured outputs are stored in `results/`.
+The results compare execution time, memory use, system-call behavior, and CPU-related counters. Raw outputs are in `results/`, screenshots are in `results/screenshots/`, and the appendix material is in `appendices/`.
 
-For setup, commands, and folder details, see [Paper1-Shell-Scripts/README.md](Paper1-Shell-Scripts/README.md).
+The new script for the research contribution section is:
 
-## Paper 2: Synchronization
+```text
+Paper1-Shell-Scripts/src/file_organizer.sh
+```
 
-`Paper2-Synchronization/` is reserved for synchronization experiments, such as producer-consumer and dining philosophers implementations. This folder currently contains only the project placeholder.
+It sorts files into folders by extension. Its algorithm and test notes are included in `Paper1-Shell-Scripts/appendices/paper1_appendices.md`.
 
-Planned work:
+## Paper 2
 
-- implement synchronization problems using threads;
-- compare synchronization strategies;
-- measure throughput, latency, CPU usage, memory usage, context switches, and deadlock behavior;
-- document results with tables and plots.
+`Paper2-Synchronization/` is reserved for the synchronization paper. It is intended for producer-consumer and dining philosophers experiments, but no implementation has been added yet.
 
-## Paper 3: Scheduling and Queueing
+## Paper 3
 
-`Paper3-Scheduling-Queueing/` is reserved for scheduling and queueing simulations. This folder currently contains only the project placeholder.
+`Paper3-Scheduling-Queueing/` is reserved for the scheduling and queueing paper. It is intended for multilevel feedback queue and queueing-theory simulations, but no implementation has been added yet.
 
-Planned work:
+## Running Paper 1 Benchmarks
 
-- simulate process scheduling with multilevel feedback queues;
-- evaluate waiting time, turnaround time, response time, and throughput;
-- run repeated experiments across scheduler parameters;
-- extend the analysis to queueing models such as M/M/1 and M/M/S.
+Paper 1 should be run in Linux or WSL with Bash.
 
-## Requirements
-
-Paper 1 is designed for a Linux or WSL environment with Bash. The benchmark workflow can also use:
+Useful tools:
 
 - `/usr/bin/time`
 - `strace`
 - `perf`
 
-If `strace` or `perf` is not installed, `benchmark.sh` still writes an output file noting that the tool is unavailable.
-
-## Quick Start
-
-From the repository root:
+Example:
 
 ```bash
 cd Paper1-Shell-Scripts
-chmod +x benchmark.sh scripts_original/*.sh scripts_optimized/*.sh
+chmod +x benchmark.sh scripts_original/*.sh scripts_optimized/*.sh src/file_organizer.sh
 ./benchmark.sh collatz-original ./scripts_original/collatz.sh 27
 ./benchmark.sh collatz-optimized ./scripts_optimized/collatz_optimized.sh 27 --silent
 ```
 
-Benchmark outputs are written under `Paper1-Shell-Scripts/results/`.
-
-## Final Deliverables
-
-The final submission should include:
-
-- the written report for each completed paper;
-- source code and optimized code;
-- datasets and test inputs;
-- raw benchmark outputs;
-- result tables, screenshots, and diagrams;
-- reproduction notes explaining how the experiments were run.
+The main Paper 1 folder has its own README with the full layout and result locations.
