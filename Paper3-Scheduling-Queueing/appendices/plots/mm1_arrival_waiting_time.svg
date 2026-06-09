@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="400.0" y="28" text-anchor="middle" font-family="Arial" font-size="18">M/M/1 Arrival Rate vs Waiting Time</text>
+  <line x1="60" y1="440" x2="740" y2="440" stroke="black"/>
+  <line x1="60" y1="60" x2="60" y2="440" stroke="black"/>
+  <text x="400.0" y="485" text-anchor="middle" font-family="Arial" font-size="13">arrival_rate</text>
+  <text x="18" y="250.0" text-anchor="middle" font-family="Arial" font-size="13" transform="rotate(-90 18 250.0)">avg_waiting_time</text>
+  <polyline points="167.4,187.5 167.4,394.6 167.4,431.8 95.8,346.8 95.8,421.2 95.8,437.4 60.0,400.0 60.0,432.4 60.0,440.0 740.0,346.8 382.1,251.2 382.1,410.6 203.2,60.0 203.2,378.7 203.2,428.8 740.0,346.8 382.1,251.2 382.1,410.6" fill="none" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="167.4" cy="187.5" r="4" fill="#2563eb" />
+<circle cx="167.4" cy="394.6" r="4" fill="#2563eb" />
+<circle cx="167.4" cy="431.8" r="4" fill="#2563eb" />
+<circle cx="95.8" cy="346.8" r="4" fill="#2563eb" />
+<circle cx="95.8" cy="421.2" r="4" fill="#2563eb" />
+<circle cx="95.8" cy="437.4" r="4" fill="#2563eb" />
+<circle cx="60.0" cy="400.0" r="4" fill="#2563eb" />
+<circle cx="60.0" cy="432.4" r="4" fill="#2563eb" />
+<circle cx="60.0" cy="440.0" r="4" fill="#2563eb" />
+<circle cx="740.0" cy="346.8" r="4" fill="#2563eb" />
+<circle cx="382.1" cy="251.2" r="4" fill="#2563eb" />
+<circle cx="382.1" cy="410.6" r="4" fill="#2563eb" />
+<circle cx="203.2" cy="60.0" r="4" fill="#2563eb" />
+<circle cx="203.2" cy="378.7" r="4" fill="#2563eb" />
+<circle cx="203.2" cy="428.8" r="4" fill="#2563eb" />
+<circle cx="740.0" cy="346.8" r="4" fill="#2563eb" />
+<circle cx="382.1" cy="251.2" r="4" fill="#2563eb" />
+<circle cx="382.1" cy="410.6" r="4" fill="#2563eb" />
+</svg>

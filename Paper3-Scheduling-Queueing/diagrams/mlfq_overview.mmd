@@ -1,0 +1,12 @@
+flowchart TD
+    A[New process arrives] --> B[Queue 1]
+    B --> C{Finished within Q1?}
+    C -- Yes --> D[Complete process]
+    C -- No --> E[Demote to Queue 2]
+    E --> F{Finished within Q2?}
+    F -- Yes --> D
+    F -- No --> G[Demote to Queue 3]
+    G --> H[Run third-level policy]
+    H --> I{Finished?}
+    I -- Yes --> D
+    I -- No --> G

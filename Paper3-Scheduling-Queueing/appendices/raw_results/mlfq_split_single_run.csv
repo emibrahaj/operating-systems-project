@@ -1,0 +1,2 @@
+config,third_level_sjf_percent,process_count,completed,makespan,throughput,avg_turnaround_time,avg_waiting_time,avg_response_time,cpu_utilization
+mlfq_sjf_fcfs_split.json,50,1000,1000,505087,0.001979856935537838,189368.035,188862.948,24911.771,1.0

@@ -1,0 +1,14 @@
+{
+  "process_count": 1000,
+  "arrival_window": 100,
+  "burst_min": 10,
+  "burst_max": 1000,
+  "q1": 20,
+  "q2": 50,
+  "l1": 30,
+  "l2": 30,
+  "third_level_sjf_percent": 50,
+  "third_level_fcfs_percent": 50,
+  "random_distribution": "uniform",
+  "monte_carlo_runs": 100
+}

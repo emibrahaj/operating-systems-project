@@ -1,0 +1,7 @@
+flowchart LR
+    A[Process arrivals] --> B[Queue]
+    B --> C{Server model}
+    C --> D[M/M/1: one server]
+    C --> E[M/M/S: S servers]
+    D --> F[Departures]
+    E --> F

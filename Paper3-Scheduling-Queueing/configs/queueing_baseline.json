@@ -1,0 +1,9 @@
+{
+  "process_count": 1000,
+  "arrival_window": 100,
+  "service_capacity": 10,
+  "servers": 1,
+  "model": "mm1",
+  "random_distribution": "poisson",
+  "monte_carlo_runs": 100
+}

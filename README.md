@@ -1,6 +1,6 @@
 # Operating Systems Project
 
-This repository contains the practical files for the Operating Systems final project. The work is split into three paper folders. Paper 1 is complete enough to include scripts, datasets, measurements, screenshots, and appendix material. Paper 2 and Paper 3 are still placeholders.
+This repository contains the practical files for the Operating Systems final project. The work is split into three paper folders. Paper 1 includes scripts, datasets, measurements, screenshots, and appendix material. Paper 3 now has its starting folder layout for scheduling and queueing work. Paper 2 is still a placeholder.
 
 ## Structure
 
@@ -19,6 +19,15 @@ operating-systems-project/
 |   `-- benchmark.sh
 |-- Paper2-Synchronization/
 |-- Paper3-Scheduling-Queueing/
+|   |-- appendices/
+|   |-- configs/
+|   |-- datasets/
+|   |-- diagrams/
+|   |-- experiments/
+|   |-- report/
+|   |-- results/
+|   |-- simulations/
+|   `-- src/
 `-- README.md
 ```
 
@@ -55,7 +64,7 @@ It sorts files into folders by extension. Its algorithm and test notes are inclu
 
 ## Paper 3
 
-`Paper3-Scheduling-Queueing/` is reserved for the scheduling and queueing paper. It is intended for multilevel feedback queue and queueing-theory simulations, but no implementation has been added yet.
+`Paper3-Scheduling-Queueing/` is for the scheduling and queueing paper. It now includes Python code for multilevel feedback queue simulations, SJF/FCFS third-level splitting, M/M/1 and M/M/S queueing models, generated workloads, experiment scripts, CSV results, and SVG plots.
 
 ## Running Paper 1 Benchmarks
 

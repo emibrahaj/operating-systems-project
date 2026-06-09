@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="400.0" y="28" text-anchor="middle" font-family="Arial" font-size="18">MLFQ Q1 vs Waiting Time</text>
+  <line x1="60" y1="440" x2="740" y2="440" stroke="black"/>
+  <line x1="60" y1="60" x2="60" y2="440" stroke="black"/>
+  <text x="400.0" y="485" text-anchor="middle" font-family="Arial" font-size="13">q1</text>
+  <text x="18" y="250.0" text-anchor="middle" font-family="Arial" font-size="13" transform="rotate(-90 18 250.0)">avg_waiting_time</text>
+  <polyline points="286.7,440.0 286.7,440.0 286.7,440.0 740.0,440.0 740.0,440.0 740.0,440.0 60.0,397.1 60.0,397.1 60.0,397.1 286.7,267.4 286.7,267.4 286.7,267.4 740.0,267.4 740.0,267.4 740.0,267.4 740.0,254.7 740.0,254.7 740.0,254.7 60.0,217.6 60.0,217.6 60.0,217.6 286.7,207.3 286.7,207.3 286.7,207.3 60.0,139.4 60.0,139.4 60.0,139.4 740.0,92.5 740.0,92.5 740.0,92.5 60.0,63.9 60.0,63.9 60.0,63.9 286.7,60.0 286.7,60.0 286.7,60.0" fill="none" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="286.7" cy="440.0" r="4" fill="#2563eb" />
+<circle cx="286.7" cy="440.0" r="4" fill="#2563eb" />
+<circle cx="286.7" cy="440.0" r="4" fill="#2563eb" />
+<circle cx="740.0" cy="440.0" r="4" fill="#2563eb" />
+<circle cx="740.0" cy="440.0" r="4" fill="#2563eb" />
+<circle cx="740.0" cy="440.0" r="4" fill="#2563eb" />
+<circle cx="60.0" cy="397.1" r="4" fill="#2563eb" />
+<circle cx="60.0" cy="397.1" r="4" fill="#2563eb" />
+<circle cx="60.0" cy="397.1" r="4" fill="#2563eb" />
+<circle cx="286.7" cy="267.4" r="4" fill="#2563eb" />
+<circle cx="286.7" cy="267.4" r="4" fill="#2563eb" />
+<circle cx="286.7" cy="267.4" r="4" fill="#2563eb" />
+<circle cx="740.0" cy="267.4" r="4" fill="#2563eb" />
+<circle cx="740.0" cy="267.4" r="4" fill="#2563eb" />
+<circle cx="740.0" cy="267.4" r="4" fill="#2563eb" />
+<circle cx="740.0" cy="254.7" r="4" fill="#2563eb" />
+<circle cx="740.0" cy="254.7" r="4" fill="#2563eb" />
+<circle cx="740.0" cy="254.7" r="4" fill="#2563eb" />
+<circle cx="60.0" cy="217.6" r="4" fill="#2563eb" />
+<circle cx="60.0" cy="217.6" r="4" fill="#2563eb" />
+<circle cx="60.0" cy="217.6" r="4" fill="#2563eb" />
+<circle cx="286.7" cy="207.3" r="4" fill="#2563eb" />
+<circle cx="286.7" cy="207.3" r="4" fill="#2563eb" />
+<circle cx="286.7" cy="207.3" r="4" fill="#2563eb" />
+<circle cx="60.0" cy="139.4" r="4" fill="#2563eb" />
+<circle cx="60.0" cy="139.4" r="4" fill="#2563eb" />
+<circle cx="60.0" cy="139.4" r="4" fill="#2563eb" />
+<circle cx="740.0" cy="92.5" r="4" fill="#2563eb" />
+<circle cx="740.0" cy="92.5" r="4" fill="#2563eb" />
+<circle cx="740.0" cy="92.5" r="4" fill="#2563eb" />
+<circle cx="60.0" cy="63.9" r="4" fill="#2563eb" />
+<circle cx="60.0" cy="63.9" r="4" fill="#2563eb" />
+<circle cx="60.0" cy="63.9" r="4" fill="#2563eb" />
+<circle cx="286.7" cy="60.0" r="4" fill="#2563eb" />
+<circle cx="286.7" cy="60.0" r="4" fill="#2563eb" />
+<circle cx="286.7" cy="60.0" r="4" fill="#2563eb" />
+</svg>

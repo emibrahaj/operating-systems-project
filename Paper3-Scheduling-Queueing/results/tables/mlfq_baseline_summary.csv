@@ -1,0 +1,2 @@
+config,process_count,completed,makespan,throughput,avg_turnaround_time,avg_waiting_time,avg_response_time,cpu_utilization
+mlfq_baseline.json,1000,1000,503066,0.001987810744514636,335993.922,335490.856,24908.34,1.0
