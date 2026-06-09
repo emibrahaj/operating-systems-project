@@ -1,85 +1,179 @@
-# Paper 1: Advanced Shell Script Analysis & Optimization
+# Paper 1: Shell Script Analysis and Optimization
 
-This folder contains the code, datasets, benchmark outputs, screenshots, diagrams, and report files for Paper 1. The goal is to evaluate selected shell scripts empirically, instrument them, optimize them, and compare the results.
+This folder contains the implementation and benchmark evidence for Paper 1 of the Operating Systems project. The paper studies ten Bash scripts, explains what each script does, identifies performance bottlenecks, and compares the original scripts with optimized versions.
 
-## Start Here
+The main goal is not only to make the scripts faster, but also to show why the optimized versions perform better using operating-system-level evidence such as timing, system-call summaries, and CPU performance counters.
 
-Do the practical work first, then write the report from the evidence:
-
-1. Copy the 10 selected original scripts into `scripts_original/`.
-2. Create small datasets in `datasets/`.
-3. Run each original script once and save screenshots in `results/screenshots/`.
-4. Copy scripts into `scripts_instrumented/` and add comments/logging.
-5. Benchmark original scripts with `time`, `strace`, and `perf`.
-6. Create optimized versions in `scripts_optimized/`.
-7. Compare original vs optimized results.
-8. Use the collected outputs, plots, and screenshots to write the paper in `report/`.
-
-## Folder Structure
+## What Is Included
 
 ```text
 Paper1-Shell-Scripts/
 |-- scripts_original/
-|-- scripts_instrumented/
+|   |-- blank-rename.sh
+|   |-- collatz.sh
+|   |-- days-between.sh
+|   |-- encryptedpw.sh
+|   |-- life.sh
+|   |-- mailformat.sh
+|   |-- makedict.sh
+|   |-- password.sh
+|   |-- rn.sh
+|   `-- soundex.sh
 |-- scripts_optimized/
+|   |-- blank-rename_optimized.sh
+|   |-- collatz_optimized.sh
+|   |-- days-between_optimized.sh
+|   |-- encryptedpw_optimized.sh
+|   |-- life_optimized.sh
+|   |-- mailformat_optimized.sh
+|   |-- makedict_optimized.sh
+|   |-- password_optimized.sh
+|   |-- rn_optimized.sh
+|   `-- soundex_optimized.sh
 |-- datasets/
-|   |-- emails/
-|   |-- rename_test/
-|   |-- text_files/
-|   |-- names/
-|   `-- life_grids/
 |-- results/
-|   |-- screenshots/
-|   |-- time/
-|   |-- strace/
-|   `-- perf/
-|-- diagrams/
-|-- report/
-`-- benchmark.sh
+|-- benchmark.sh
+`-- README.md
 ```
 
-## Folder Purpose
+## Script Set
 
-- `scripts_original/`: exact copies of the selected scripts from the assignment material.
-- `scripts_instrumented/`: versions with added comments, logging, and intermediate-output tracing.
-- `scripts_optimized/`: improved versions used for original-vs-optimized comparison.
-- `datasets/emails/`: sample email/text inputs for `mailformat`.
-- `datasets/rename_test/`: copied test folders/files for `rn` and `blank-rename`.
-- `datasets/text_files/`: sample text inputs for scripts such as `makedict`.
-- `datasets/names/`: sample name lists for scripts such as `soundex`.
-- `datasets/life_grids/`: starting grids for Game of Life.
-- `results/screenshots/`: screenshots proving script behavior and intermediate outputs.
-- `results/time/`: `/usr/bin/time -v` outputs.
-- `results/strace/`: `strace -c` outputs.
-- `results/perf/`: `perf stat` outputs.
-- `diagrams/`: control-flow and data-flow diagrams for each selected script.
-- `report/`: outline, draft, references, tables, and final Paper 1 report.
+| Script | Purpose | Main optimization idea |
+|---|---|---|
+| `blank-rename.sh` | Replaces blanks in filenames | reduce external commands inside loops |
+| `collatz.sh` | Prints a Collatz sequence | separate computation from formatted output |
+| `days-between.sh` | Computes date distance | simplify date handling and repeated parsing |
+| `encryptedpw.sh` | Demonstrates encrypted password handling | reduce unnecessary command calls |
+| `life.sh` | Runs Conway's Game of Life in Bash | reduce repeated text processing in the generation loop |
+| `mailformat.sh` | Formats email/text input | streamline text transformations |
+| `makedict.sh` | Builds a dictionary-style word list | simplify pipeline work |
+| `password.sh` | Generates password-style output | reduce process overhead |
+| `rn.sh` | Renames files matching a pattern | safer filename handling and fewer subshells |
+| `soundex.sh` | Computes Soundex-style name codes | simplify character mapping and filtering |
 
-## Suggested 10 Scripts
+## Datasets
 
-The assignment specifically mentions several examples. A manageable starting set is:
+The `datasets/` folder contains small, repeatable inputs used by the scripts. Examples include:
 
-1. `mailformat.sh`
-2. `rn.sh`
-3. `blank-rename.sh`
-4. `encryptedpw.sh`
-5. `collatz.sh`
-6. `days-between.sh`
-7. `makedict.sh`
-8. `soundex.sh`
-9. `life.sh`
-10. `password.sh`
+- `datasets/emails/` for `mailformat.sh`;
+- `datasets/encryptedpw/` for password/encryption-related tests;
+- `datasets/life/` and `datasets/life_grids/` for `life.sh`;
+- `datasets/rename_test/`, `datasets/rn_test/`, and copied run folders for rename tests;
+- `datasets/text/` for text-processing scripts.
 
-This list can be changed if the team chooses different scripts from the provided material.
+Rename-related scripts modify files, so use copied test folders instead of running them directly on important files.
 
-## Benchmark Commands
+## Results
 
-Example for `collatz.sh`:
+The `results/` folder stores benchmark evidence. The repo already contains per-script result folders such as:
+
+```text
+results/
+|-- blank-rename/
+|-- collatz/
+|-- days-between/
+|-- encryptedpw/
+|-- environment/
+|-- life/
+|-- mailformat/
+|-- makedict/
+|-- password/
+|-- rn/
+|-- soundex/
+`-- paper1_results_table.md
+```
+
+Each per-script folder can contain:
+
+- `original_time.txt`
+- `original_strace.txt`
+- `original_perf.txt`
+- `optimized_time.txt`
+- `optimized_strace.txt`
+- `optimized_perf.txt`
+
+`results/environment/` stores machine and tool information such as OS, CPU, memory, Bash, Git, `strace`, and `perf` versions. `results/paper1_results_table.md` is the summary table used for the paper.
+
+## Requirements
+
+Run the experiments in Linux or WSL. Required:
+
+- Bash
+- `/usr/bin/time`
+
+Recommended:
+
+- `strace`
+- `perf`
+
+The benchmark helper checks for `strace` and `perf`. If either tool is unavailable, it still creates a result file explaining that the tool was missing.
+
+## Running a Benchmark
+
+From this folder:
 
 ```bash
-/usr/bin/time -v ./scripts_original/collatz.sh 27 > results/time/collatz_time.txt 2>&1
-strace -c ./scripts_original/collatz.sh 27 > results/strace/collatz_strace.txt 2>&1
-perf stat ./scripts_original/collatz.sh 27 > results/perf/collatz_perf.txt 2>&1
+chmod +x benchmark.sh scripts_original/*.sh scripts_optimized/*.sh
 ```
 
-Use instrumented scripts for explanation and screenshots. Use original and optimized scripts for performance comparison, because logging changes timing results.
+Run an original script:
+
+```bash
+./benchmark.sh collatz-original ./scripts_original/collatz.sh 27
+```
+
+Run the optimized version:
+
+```bash
+./benchmark.sh collatz-optimized ./scripts_optimized/collatz_optimized.sh 27 --silent
+```
+
+The helper writes:
+
+```text
+results/time/<name>_time.txt
+results/strace/<name>_strace.txt
+results/perf/<name>_perf.txt
+```
+
+Some existing results are also organized in per-script folders, for example `results/collatz/original_time.txt` and `results/collatz/optimized_time.txt`.
+
+## Suggested Test Commands
+
+These examples show the intended comparison style. Adjust inputs when needed for the paper.
+
+```bash
+./benchmark.sh collatz-original ./scripts_original/collatz.sh 27
+./benchmark.sh collatz-optimized ./scripts_optimized/collatz_optimized.sh 27 --silent
+
+./benchmark.sh days-between-original ./scripts_original/days-between.sh 2024-01-01 2024-12-31
+./benchmark.sh days-between-optimized ./scripts_optimized/days-between_optimized.sh 2024-01-01 2024-12-31
+
+./benchmark.sh password-original ./scripts_original/password.sh
+./benchmark.sh password-optimized ./scripts_optimized/password_optimized.sh
+
+./benchmark.sh soundex-original ./scripts_original/soundex.sh Smith
+./benchmark.sh soundex-optimized ./scripts_optimized/soundex_optimized.sh Smith
+```
+
+For `rn.sh` and `blank-rename.sh`, first copy the sample dataset into a temporary run directory, then run the benchmark inside that copied directory. This prevents one test run from changing the input files needed by the next run.
+
+## How to Use the Evidence in the Paper
+
+For each script, the report should include:
+
+- what the original script does;
+- the input used for testing;
+- the main bottleneck found in the original version;
+- which optimization was applied;
+- timing results from `/usr/bin/time`;
+- system-call behavior from `strace -c`;
+- CPU-counter evidence from `perf stat`, when available;
+- a short explanation of whether the optimized script improved speed, reduced process creation, or improved safety/readability.
+
+## Notes
+
+- Logging and extra `echo` statements can change timing results, so benchmark the original and optimized scripts without adding extra debug output.
+- Use the same input for original and optimized scripts whenever possible.
+- Run each benchmark more than once if the numbers vary significantly.
+- Keep raw outputs in `results/` so the final report can reference reproducible evidence instead of only screenshots or summaries.

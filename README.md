@@ -1,69 +1,97 @@
-# Operating Systems Final Project
+# Operating Systems Project
 
-This repository organizes the final Operating Systems project for CEN/SWE 2025-2026. The project is divided into three independent research papers, each with its own code, experiments, results, and reproducibility material.
+This repository contains the practical work for the Operating Systems final project. It is organized as three separate paper folders so that each topic can keep its own source code, datasets, benchmark outputs, and report material.
 
-## Project Structure
+Paper 1 is the active, implemented part of the repository. Paper 2 and Paper 3 are present as placeholders for future work.
+
+## Repository Layout
 
 ```text
 operating-systems-project/
 |-- Paper1-Shell-Scripts/
+|   |-- scripts_original/
+|   |-- scripts_optimized/
+|   |-- datasets/
+|   |-- results/
+|   `-- benchmark.sh
 |-- Paper2-Synchronization/
-`-- Paper3-Scheduling-Queueing/
+|-- Paper3-Scheduling-Queueing/
+`-- README.md
 ```
 
-## Papers
+## Paper 1: Shell Script Analysis and Optimization
 
-### Paper 1: Advanced Shell Script Analysis & Optimization
+`Paper1-Shell-Scripts/` compares ten original Bash scripts with optimized versions. The work focuses on how small shell-programming choices affect execution time, process creation, system calls, and command overhead.
 
-Focus: systematic empirical evaluation of Bash/shell scripts.
+The selected scripts are:
 
-Required work includes:
+- `blank-rename.sh`
+- `collatz.sh`
+- `days-between.sh`
+- `encryptedpw.sh`
+- `life.sh`
+- `mailformat.sh`
+- `makedict.sh`
+- `password.sh`
+- `rn.sh`
+- `soundex.sh`
 
-- select and analyze 10 scripts from the provided Part I material;
-- explain each script's functionality;
-- add comments and instrumentation logs;
-- run experiments with different inputs;
-- collect execution time, CPU usage, memory usage, and I/O-related results;
-- identify performance bottlenecks;
-- create optimized versions;
-- compare original and optimized implementations;
-- extract shell scripting design patterns;
-- include diagrams, screenshots, raw runs, tables, and plots.
+Each original script is stored in `scripts_original/`, and the matching optimized implementation is stored in `scripts_optimized/`. Test inputs are stored in `datasets/`, while measured outputs are stored in `results/`.
 
-### Paper 2: Multithreaded Synchronization & Performance
+For setup, commands, and folder details, see [Paper1-Shell-Scripts/README.md](Paper1-Shell-Scripts/README.md).
 
-Focus: producer-consumer and dining philosophers synchronization problems.
+## Paper 2: Synchronization
 
-Required work includes:
+`Paper2-Synchronization/` is reserved for synchronization experiments, such as producer-consumer and dining philosophers implementations. This folder currently contains only the project placeholder.
 
-- implement producer-consumer with bounded buffer in POSIX pthreads and Java or Python;
-- implement dining philosophers using multiple synchronization approaches;
-- vary buffer size, producer/consumer counts, and philosopher count;
-- compare throughput, latency, CPU usage, memory usage, context switches, and deadlock behavior.
+Planned work:
 
-### Paper 3: Scheduling, Queuing & System Optimization
+- implement synchronization problems using threads;
+- compare synchronization strategies;
+- measure throughput, latency, CPU usage, memory usage, context switches, and deadlock behavior;
+- document results with tables and plots.
 
-Focus: multilevel feedback queue scheduling and queuing theory simulation.
+## Paper 3: Scheduling and Queueing
 
-Required work includes:
+`Paper3-Scheduling-Queueing/` is reserved for scheduling and queueing simulations. This folder currently contains only the project placeholder.
 
-- simulate randomized process arrivals and burst times;
-- study optimal values for Q1, Q2, L1, L2, and T;
-- evaluate throughput, turnaround time, waiting time, and response time;
-- run Monte Carlo experiments;
-- visualize results using tables, heatmaps, and performance plots;
-- extend the analysis to M/M/1 and M/M/S queuing models.
+Planned work:
+
+- simulate process scheduling with multilevel feedback queues;
+- evaluate waiting time, turnaround time, response time, and throughput;
+- run repeated experiments across scheduler parameters;
+- extend the analysis to queueing models such as M/M/1 and M/M/S.
+
+## Requirements
+
+Paper 1 is designed for a Linux or WSL environment with Bash. The benchmark workflow can also use:
+
+- `/usr/bin/time`
+- `strace`
+- `perf`
+
+If `strace` or `perf` is not installed, `benchmark.sh` still writes an output file noting that the tool is unavailable.
+
+## Quick Start
+
+From the repository root:
+
+```bash
+cd Paper1-Shell-Scripts
+chmod +x benchmark.sh scripts_original/*.sh scripts_optimized/*.sh
+./benchmark.sh collatz-original ./scripts_original/collatz.sh 27
+./benchmark.sh collatz-optimized ./scripts_optimized/collatz_optimized.sh 27 --silent
+```
+
+Benchmark outputs are written under `Paper1-Shell-Scripts/results/`.
 
 ## Final Deliverables
 
-Each paper should include:
+The final submission should include:
 
-- abstract and keywords;
-- methodology;
-- implementation details;
-- experiments and results;
-- plots, tables, and screenshots;
-- reproducibility notes;
-- appendices with code, raw outputs, and supporting files.
-
-The final submission should include the full MS Word report plus all separate support files needed to reproduce the work.
+- the written report for each completed paper;
+- source code and optimized code;
+- datasets and test inputs;
+- raw benchmark outputs;
+- result tables, screenshots, and diagrams;
+- reproduction notes explaining how the experiments were run.
